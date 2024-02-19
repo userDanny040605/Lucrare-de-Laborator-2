@@ -47,7 +47,7 @@ class University:
         for faculty in self.faculties:
             for student in faculty.students:
                 if student.graduated:
-                    print(student.first_name, ' ', student.last_name)
+                    print(student.first_name, '', student.last_name)
 
     def is_student_in_faculty(self, student, faculty):
         return student.faculty == faculty
@@ -70,6 +70,21 @@ class University:
             if faculty.field == field:
                 print(faculty.name)
 
+def main_menu():
+    print("\nMain Menu:")
+    print("1. Faculty Operations:")
+    print("   1. Create and assign a student to a faculty")
+    print("   2. Graduate a student from a faculty")
+    print("   3. Display current enrolled students")
+    print("   4. Display graduates")
+    print("   5. Check if a student belongs to a faculty")
+    print("2. General Operations:")
+    print("   1. Create a new faculty")
+    print("   2. Search what faculty a student belongs to by the email: ")
+    print("   3. Display University faculties")
+    print("   4. Display all faculties belonging to a field")
+    print("   0. Exit")
+
 def main():
     university = University()
     while True:
@@ -79,12 +94,13 @@ def main():
         print("   3. Display current enrolled students")
         print("   4. Display graduates")
         print("   5. Check if a student belongs to a faculty")
+        print("   0. Back")
         print("2. General Operations:")
         print("   1. Create a new faculty")
         print("   2. Search what faculty a student belongs to by the email: ")
         print("   3. Display University faculties")
         print("   4. Display all faculties belonging to a field")
-        print("   0. Exit")
+        print("   0. Back")
 
         choice = input("Enter your choice: ")
 
