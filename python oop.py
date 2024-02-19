@@ -78,12 +78,13 @@ def main_menu():
     print("   3. Display current enrolled students")
     print("   4. Display graduates")
     print("   5. Check if a student belongs to a faculty")
+    print("   0. Back")
     print("2. General Operations:")
     print("   1. Create a new faculty")
     print("   2. Search what faculty a student belongs to by the email: ")
     print("   3. Display University faculties")
     print("   4. Display all faculties belonging to a field")
-    print("   0. Exit")
+    print("   0. Back")
 
 def main():
     university = University()
