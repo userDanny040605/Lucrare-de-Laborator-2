@@ -37,10 +37,10 @@ class University:
 
     def display_enrolled_students(self):
         for faculty in self.faculties:
-            print(f"Students enrolled in {faculty.name}:")
+            print("Students enrolled in ", faculty.name, ": ")
             for student in faculty.students:
                 if not student.graduated:
-                    print(student.first_name, ' ', student.last_name)
+                    print(student.first_name, '', student.last_name)
 
     def display_graduates(self):
         print("List of graduates:")
@@ -69,6 +69,7 @@ class University:
         for faculty in self.faculties:
             if faculty.field == field:
                 print(faculty.name)
+
 
 def main_menu():
     print("\nMain Menu:")
